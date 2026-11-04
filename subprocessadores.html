@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subprocessadores de dados · Preposto IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="topo">
+      <p class="sobretitulo">Transparência operacional</p>
+      <h1>Subprocessadores de dados</h1>
+      <p class="descricao">Os fornecedores usados pelo Preposto IA e a finalidade limitada de cada integração.</p>
+      <p class="meta">Complementa a política de privacidade, versão 2026-10 · Leitura de 3 minutos</p>
+    </header>
+
+    <section class="bloco resumo" aria-labelledby="resumo-titulo">
+      <h2 id="resumo-titulo">Resumo</h2>
+      <p>Cada fornecedor recebe só as categorias de dados necessárias ao recurso ativo. Integrações desativadas não recebem conteúdo, e as credenciais ficam no servidor.</p>
+    </section>
+
+    <section class="bloco" aria-label="Destaques">
+      <ul class="destaques">
+        <li>
+          <h3>Finalidade limitada</h3>
+          <p>Cada acesso existe para uma função operacional definida.</p>
+        </li>
+        <li>
+          <h3>Desligado não recebe</h3>
+          <p>Sem a integração ativa, nenhum dado sai para o fornecedor.</p>
+        </li>
+        <li>
+          <h3>Revisão contínua</h3>
+          <p>Mudanças relevantes entram nesta lista e na política.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="secao" id="fornecedores" aria-labelledby="t-fornecedores">
+      <h2 id="t-fornecedores">Fornecedores e finalidades</h2>
+      <div class="tabela-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Fornecedor</th>
+              <th scope="col">Serviço</th>
+              <th scope="col">Finalidade</th>
+              <th scope="col">Dados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Moonshot AI</td>
+              <td>Kimi</td>
+              <td>IA de texto do assistente e leitura de texto em imagens (OCR).</td>
+              <td>Trechos de documentos, perguntas e imagens enviadas para leitura.</td>
+            </tr>
+            <tr>
+              <td>OpenAI</td>
+              <td>OpenAI Transcrição</td>
+              <td>Transcreve em texto o áudio do comando por voz. O envio é feito pelo servidor, nenhuma chave chega ao navegador e o áudio não é guardado pelo Preposto IA.</td>
+              <td>Áudio do comando por voz (só para transcrição).</td>
+            </tr>
+            <tr>
+              <td>WAHA (conector não oficial)</td>
+              <td>WhatsApp</td>
+              <td>Conecta o número da gestão por QR Code para alimentar o CRM, a triagem e os envios.</td>
+              <td>Mensagens, nomes e telefones das conversas habilitadas.</td>
+            </tr>
+            <tr>
+              <td>Resend</td>
+              <td>E-mail</td>
+              <td>Confirmação de conta, redefinição de senha, convites e códigos de exclusão.</td>
+              <td>Nome e e-mail do destinatário e o conteúdo da mensagem.</td>
+            </tr>
+            <tr>
+              <td>Supabase</td>
+              <td>Supabase Storage e PostgreSQL</td>
+              <td>Guarda privada de documentos, logos e fotos (links de download assinados) e banco de dados da aplicação.</td>
+              <td>Arquivos enviados e os registros da gestão.</td>
+            </tr>
+            <tr>
+              <td>Asaas</td>
+              <td>Cobrança</td>
+              <td>Checkout e assinaturas da gestão, quando a cobrança estiver ativa.</td>
+              <td>Dados de cobrança do titular da gestão.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao" id="ambiente-local" aria-labelledby="t-ambiente-local">
+      <h2 id="t-ambiente-local">Neste ambiente de demonstração</h2>
+      <p>No protótipo, cada integração só é ativada quando a chave correspondente é configurada no servidor. Sem chave, ela aparece como sem chave, desativada ou em simulação local (por exemplo, e-mails ficam registrados localmente e não são enviados), e os dados ficam em um arquivo local no lugar do banco de dados.</p>
+    </section>
+
+    <section class="secao" id="governanca" aria-labelledby="t-governanca">
+      <h2 id="t-governanca">Governança dos fornecedores</h2>
+      <p>Antes de ativar um fornecedor, avaliamos finalidade, acesso, segurança, retenção, localização e obrigações contratuais. Mudanças relevantes nesta lista são refletidas na política de privacidade e comunicadas quando exigido.</p>
+      <p class="links"><a href="privacidade.html">Política de privacidade</a></p>
+    </section>
+
+    <footer class="rodape">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="privacidade.html">Política de privacidade</a></li>
+        <li><a href="subprocessadores.html">Subprocessadores</a></li>
+        <li><a href="exclusao-de-conta.html">Exclusão de conta</a></li>
+      </ul>
+      <p>Contato: <a href="mailto:contato@preposto.ai">contato@preposto.ai</a></p>
+    </footer>
+  </main>
+</body>
+</html>
